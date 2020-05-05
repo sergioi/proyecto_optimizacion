@@ -145,6 +145,7 @@ include_once 'crud.php';
             <li><a href="#objetivos">Objetivos</a></li>
             <li><a href="servicios/desarrolladores.php">Desarrolladores</a></li>
             <li><a href="servicios/formulario.php">Formulario</a></li> 
+            <li><a href="servicios/galeria.php">Galería</a></li> 
           </ul>
         </li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
