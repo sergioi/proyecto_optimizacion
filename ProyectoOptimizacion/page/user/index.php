@@ -8,32 +8,27 @@ include_once 'crud.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <title>Sistema de Ventas</title>
 
-    <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="../../index.php">EL PASO</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="loginUser.php">Salir</a></li>
-        </ul>
-    </div>
-  </div>
+
 </head>
 
 <body>
+
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../../index.php">EL PASO</a>
+        </div>
+        <div class=navbar-header>
+        <a href="loginUser.php">Salir</a>
+        </div>
+    </div>
+
 
     <!--Nombre Empresa-->
     <br>
@@ -60,8 +55,9 @@ include_once 'crud.php';
             <tr>
 
                 <td> <?php echo $row['stockActual']; ?> </td>
-                <td > <?php echo $row['producto']; ?> </td>
-                <td id="tot"> $ <?php echo $row['precioVenta']; ?> <input type="number" name="dato" id="numberdato"> </td>
+                <td> <?php echo $row['producto']; ?> </td>
+                <td id="tot"> $ <?php echo $row['precioVenta']; ?> <input type="number" name="dato" id="numberdato">
+                </td>
             </tr>
             <?php
    }
