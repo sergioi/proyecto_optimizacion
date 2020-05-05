@@ -25,8 +25,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="servicios/desarrolladores.php">Desarrolladores</a></li>
-        </ul>
+        <li><a href="../index.php">Inicio</a></li>
+      </ul>
     </div>
   </div>
 </nav>

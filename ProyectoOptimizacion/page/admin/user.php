@@ -9,7 +9,7 @@ include_once 'crud2.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../boostrap/css/bootstrap.min.css">
+    <link  rel = " stylesheet " href = " https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css " >
     <title>Administrador</title>
 </head>
 
@@ -17,6 +17,7 @@ include_once 'crud2.php';
     <div>
         <a href="index.php">NUEVO PRODUCTO</a>
         <a href="user.php">NUEVO USER</a>
+        <a href="loginAdmi.php">SALIR</a>
     </div>
 
 

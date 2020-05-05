@@ -133,8 +133,8 @@ include_once 'crud.php';
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php">Inicio</a></li>
-        <li><a href="page/login.php">Login</a></li>
-        <li><a href="page/admin/index.php">Administrador</a></li>
+        <li><a href="page/user/loginUser.php">Vendedor</a></li>
+        <li><a href="page/admin/loginAdmi.php">Administrador</a></li>
         <li><a href="#contact">Contactanos</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Más

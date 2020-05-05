@@ -15,9 +15,11 @@ include_once 'crud1.php';
 </head>
 
 <body>
+
     <div>
         <a href="index.php">NUEVO PRODUCTO</a>
         <a href="user.php">NUEVO USER</a>
+        <a href="loginAdmi.php">SALIR</a>
     </div>
 
     <!--Nombre Empresa-->

@@ -24,7 +24,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="./formulario.php">Formulario</a></li>
+        <li><a href="../index.php">Inicio</a></li>
         </ul>
     </div>
   </div>
