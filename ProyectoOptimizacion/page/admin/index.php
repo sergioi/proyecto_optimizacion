@@ -20,21 +20,21 @@ include_once 'crud1.php';
 <body>
 
     <div>
-        <a href="index.php">NUEVO PRODUCTO</a>
-        <a href="user.php">NUEVO USER</a>
-        <a href="loginAdmi.php">SALIR</a>
+        <a href="index.php">Nuevo Producto</a>
+        <a href="user.php">Nuevo Usuario</a>
+        <a href="loginAdmi.php">Salir</a>
     </div>
 
     <!--Nombre Empresa-->
     <br>
     <div class="container text-center">
-        <h1>Hamburguesa "El paso"</h1>
+        <h1>Hamburguesas & Hot-Dogs "El Paso"</h1>
     </div>
     <br>
 
     <div class="container-fluid">
         <div>
-            <h2 class="text-center">Nuevo producto</h2>
+            <h2 class="text-center">Agregar Nuevo Producto</h2>
         </div>
 
 

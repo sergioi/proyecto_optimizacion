@@ -21,9 +21,6 @@ include_once 'crud.php';
 <body>
 
     <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="../../index.php">EL PASO</a>
-        </div>
         <div class=navbar-header>
         <a href="loginUser.php">Salir</a>
         </div>
@@ -33,7 +30,7 @@ include_once 'crud.php';
     <!--Nombre Empresa-->
     <br>
     <div class="container text-center">
-        <h1>Hamburguesa "El paso"</h1>
+        <h1>Hamburguesas & Hot-Dogs "El Paso"</h1>
     </div>
     <br>
 

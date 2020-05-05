@@ -135,7 +135,7 @@ include_once 'crud.php';
         <li><a href="index.php">Inicio</a></li>
         <li><a href="page/user/loginUser.php">Vendedor</a></li>
         <li><a href="page/admin/loginAdmi.php">Administrador</a></li>
-        <li><a href="#contact">Contactanos</a></li>
+        <li><a href="#contact">Contáctanos</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Más
           <span class="caret"></span></a>
@@ -175,7 +175,7 @@ include_once 'crud.php';
         <img src="imagenes/hamburguesa-sencilla.jpg" alt="hamburguesa-sencilla" class="mx-auto d-block center-block" style="width:50%">
         <div class="carousel-caption">
           <h3>Hamburguesa Sencilla</h3>
-          <p>Exquisito sabor a un super precio.</p>
+          <p>Exquisito sabor a un súper precio.</p>
         </div>      
       </div>
     
@@ -219,7 +219,7 @@ include_once 'crud.php';
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
-  <h3 class="text-center">Contactanos</h3>
+  <h3 class="text-center">Contáctanos</h3>
   <div class="row">
     <div class="col-md-4">
       

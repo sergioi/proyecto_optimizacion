@@ -19,12 +19,12 @@
 
 <body>
     <div>
-        <a href="../../index.php">salir</a>
+        <a href="../../index.php">Salir</a>
     </div>
 
     <br>
     <div class="container text-center">
-        <h1>Login sesion</h1>
+        <h1>Inicio De Sesión</h1>
         <h5>Vendedor</h5>
     </div>
     <br>
@@ -43,11 +43,11 @@
                         <br>
                         <div class="form-button">
                             <button id="submit" type="submit" class="btn btn" id="submit"><a
-                                    href="index.php">sesion</a></button>
+                                    href="index.php">Iniciar Sesión</a></button>
                         </div>
                     </form>
                     <div class="page-links">
-                        <a href="../indexlogin.php" class="active">Iniciar con otro usuario</a>
+                        <a href="../indexlogin.php" class="active">Iniciar sesión con otro usuario</a>
                     </div>
                 </div>
             </div>
