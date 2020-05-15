@@ -1,6 +1,6 @@
 <?php
 
-include_once '../../db.php';
+include_once 'Db.php';
 
 /* Codigo para Insertar Datos */
 if(isset($_POST['guardar']))
@@ -8,7 +8,7 @@ if(isset($_POST['guardar']))
 		
 	 echo "Guardandoooooooooooooooooooo";
      $descipcion = $MySQLiconn->real_escape_string($_POST['desProd']);
-     $descipcion = $MySQLiconn->real_escape_string($_POST['producto']);
+     $productos = $MySQLiconn->real_escape_string($_POST['producto']);
      $precioCompra = $MySQLiconn->real_escape_string($_POST['preComp']);
      $precioVenta = $MySQLiconn->real_escape_string($_POST['preVen']);
      $stockActual = $MySQLiconn->real_escape_string($_POST['skoActual']);
@@ -19,7 +19,7 @@ if(isset($_POST['guardar']))
      $ipcategoriass = $MySQLiconn->real_escape_string($_POST['catperte']);
 
 
-  $SQL = $MySQLiconn->query("INSERT INTO producto (producto, descripcion, precioCompra, precioVenta, stockActual, stockMinimo, stockMaximo, estado, fechaVencimiento, idcategoria) VALUES('$producto',$descipcion','$precioCompra','$precioVenta','$stockActual','$stockMinimo','$stockMaximo','$estado','$fechaVencimiento','$ipcategoriass')");
+  $SQL = $MySQLiconn->query("INSERT INTO producto (descripcion, producto, precioCompra, precioVenta, stockActual, stockMinimo, stockMaximo, estado, fechaVencimiento, idcategoria) VALUES('$descipcion','$producto','$precioCompra','$precioVenta','$stockActual','$stockMinimo','$stockMaximo','$estado','$fechaVencimiento','$ipcategoriass')");
   
   if(!$SQL)
   {
@@ -47,7 +47,7 @@ if(isset($_GET['editar']))
 /* Codigo para Actualizar Datos */
 if(isset($_POST['actualizar']))
 {
- $SQL = $MySQLiconn->query("UPDATE producto SET producto='".$_POST['producto']."',descripcion='".$_POST['desProd']."', precioCompra='".$_POST['preComp']."', precioVenta='".$_POST['preVen']."', stockActual='".$_POST['skoActual']."', stockMinimo='".$_POST['skoMini']."', stockMaximo='".$_POST['skoMax']."', estado='".$_POST['estProd']."',  fechaVencimiento='".$_POST['fechVenc']."' WHERE idproducto=".$_GET['editar']);
+ $SQL = $MySQLiconn->query("UPDATE producto SET descripcion='".$_POST['desProd']."', precioCompra='".$_POST['preComp']."', precioVenta='".$_POST['preVen']."', stockActual='".$_POST['skoActual']."', stockMinimo='".$_POST['skoMini']."', stockMaximo='".$_POST['skoMax']."', estado='".$_POST['estProd']."',  fechaVencimiento='".$_POST['fechVenc']."' WHERE idproducto=".$_GET['editar']);
  header("Location:index.php");
 }
 

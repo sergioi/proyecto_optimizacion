@@ -1,5 +1,5 @@
 <?php
-include_once 'crud.php';
+include_once 'db.php';
 
 ?>
 <!DOCTYPE html>
@@ -19,11 +19,26 @@ include_once 'crud.php';
 </head>
 
 <body>
+    <div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.php">EL Paso</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.php">salir</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-    <div class="container-fluid">
-        <div class=navbar-header>
-        <a href="loginUser.php">Salir</a>
-        </div>
+    <div>
+        <ul class="breadcrumb">
+            <li class="active"><a href="index.php">Vendedor</a></li>
+        </ul>
     </div>
 
 

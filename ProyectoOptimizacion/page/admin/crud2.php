@@ -1,6 +1,6 @@
 <?php
 
-include_once '../../db.php';
+include_once 'db.php';
 
 /* Codigo para Insertar Datos */
 if(isset($_POST['guardar']))

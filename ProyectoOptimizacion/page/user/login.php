@@ -1,87 +1,29 @@
 <?php
-include_once '../db.php';
+
+if ( !empty( $_POST ) ) {
+    if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
+        if ( $_POST['username'] != '' && $_POST['password'] != '' ) {
+            include 'db.php';
+
+            $id_admin = null;
+            $sql1 = 'select * from user_admin where (username=\'$_POST[username]\' or email=\'$_POST[username]\') and password=\'$_POST[password]\' ';
+            $query = $MySQLiconn->query( $sql1 );
+            while ( $r = $query->fetch_array() ) {
+                $id_admin = $r['id_admin'];
+                break;
+            }
+            if ( $id_admin == null ) {
+                header("Location:../../index.php");
+                
+            } else {
+                session_start();
+
+                header("Location:index.php");
+                
+
+            }
+        }
+    }
+}
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    <title>Sistema de Ventas</title>
-  
-
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="../../index.php">EL PASO</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="../../index.php">Inicio</a></li>
-        </ul>
-    </div>
-  </div>
-</nav>
-
-</head>
-
-<body>
-
-    <!--Nombre Empresa-->
-    <br>
-    <div class="container text-center">
-        <h1>Usuario</h1>
-    </div>
-    <br>
-    <br>
-    <div>
-        <div>
-            <h6>Nuevo usuario</h6>
-            <input type="text">
-            <input type="text">
-        </div>
-        <br>
-
-
-        <h6>Lista de usuarios</h6>
-
-    </div>
-
-    <!--Table-->
-    <div>
-        <table class="table table-hover table-bordered shadow p-3 mb-5 bg-white rounded">
-            <tr>
-                <th>Id</th>
-                <th>Usuario</th>
-                <th>Email</th>
-            </tr>
-
-            <?php
-
-   $res = $MySQLiconn->query("SELECT * FROM user_admin");
-   while($row=$res->fetch_array())
-   {
-    ?>
-            <tr>
-
-                <td> <?php echo $row['id_admin']; ?> </td>
-                <td> <?php echo $row['username']; ?> </td>
-                <td> $ <?php echo $row['email']; ?> </td>
-            </tr>
-            <?php
-   }
-   ?>
-        </table>
-    </div>
-
-</html>

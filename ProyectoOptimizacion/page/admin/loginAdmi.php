@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <title>Admistrador</title>
+    <title>Login</title>
     <style>
     body {
         overflow: hidden;
@@ -18,10 +18,13 @@
 </head>
 
 <body>
+
     <div>
-        <a href="../../index.php">Salir</a>
+        <ul class="breadcrumb">
+            <li><a href="../../index.php">Home</a></li>
+            <li class="active"> / login</li>
+        </ul>
     </div>
-    
 
     <br>
     <div class="container text-center">
@@ -30,33 +33,24 @@
     </div>
     <br>
     <div class="container text-center">
-        <div class="form-holder">
-            <div class="form-content">
-                <div class="form-items">
-                    <form role="form" name="login" action="" method="post">
-                        <div>
-                            <input class="form-control" type="text" name="user" placeholder="Usuario" required>
-                        </div>
-                        <br>
-                        <div>
-                            <input class="form-control" type="password" name="pass" placeholder="Contraseña" required>
-                        </div>
-                        <br>
-                        <div class="form-button">
-                            <button id="submit" type="submit" class="btn btn" id="submit"><a
-                                    href="index.php">Iniciar Sesión</a></button>
-                        </div>
-                    </form>
-                    <div class="page-links">
-                        <a href="../../indexlogin.php" class="active">Iniciar sesión con otro usuario</a>
-                    </div>
-                </div>
+        <form role="form" name="login" action="index.php" method="post">
+            <input class="form-control" type="email" name="email" placeholder="Email" maxlength="" required>
+            <br>
+            <div class="input-group">
+                <input ID="txtPassword" type="Password" Class="form-control" name="password" placeholder="Contraseña"
+                    maxlength="" required>
+                <button id="show_password" class="btn btn-primary" type="button" onclick="mostrarPassword()"> <span
+                        class="fa fa-eye-slash icon"></span> </button>
             </div>
-        </div>
+            <br>
+            <div class="form-button">
+                <button id="submit" type="submit" class="btn btn-success">Acceder</button>
+            </div>
+        </form>
+
     </div>
-    </div>
-    </div>
+
 
 </body>
-
+<script src="../js/View.js"></script>
 </html>

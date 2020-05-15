@@ -1,5 +1,5 @@
 <?php
-include_once 'crud.php';
+include_once 'db.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +33,7 @@ include_once 'crud.php';
   }
   .carousel-inner img {
     -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
+    filter: grayscale(10%); /* make all photos black and white */ 
     width: 100%; /* Set width to 100% */
     margin: auto;
   }
@@ -133,9 +133,8 @@ include_once 'crud.php';
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php">Inicio</a></li>
-        <li><a href="page/user/loginUser.php">Vendedor</a></li>
-        <li><a href="page/admin/loginAdmi.php">Administrador</a></li>
-        <li><a href="#contact">Contáctanos</a></li>
+        <li><a href="indexlogin.php">Login</a></li>
+        <li><a href="servicios/formulario.php">Contáctanos</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Más
           <span class="caret"></span></a>
@@ -153,6 +152,8 @@ include_once 'crud.php';
     </div>
   </div>
 </nav>
+<br>
+<br>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->

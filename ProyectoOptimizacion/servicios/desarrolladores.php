@@ -14,21 +14,31 @@
 </head>
 
 <body>
-    <h3 class="text-center">Desarrolladores</h3>
-
-
-    <div class="container-fluid">
-        <div class="navbar-header">
-            
-            <a class="navbar-brand" href="../index.php">EL PASO</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="../index.php">Inicio</a></li>
-            </ul>
-        </div>
+    
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..//index.php">EL PASO</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="..//index.php">Inicio</a></li>
+                        <li><a href="..//indexlogin.php">Login</a></li>
+                        <li><a href="formulario.php">Contáctanos</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-
+    <h3 class="text-center">Desarrolladores</h3>
+    <br>
 
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Sergio</a></li>
@@ -38,7 +48,9 @@
 
     <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
-            <img src="imagenes/sergio.jpg" style="float:left;width:200px;height:200px;">
+            <div>
+                <img src="imagenes/sergio.jpg" style="width:50%">
+            </div>
             <h2>Sergio Coatl Pérez</h2>
             <h5>Edad: 23 años</h5>
             <h5>Puesto: Lider</h5>
@@ -50,7 +62,9 @@
         </div>
 
         <div id="menu1" class="tab-pane fade">
-            <img src="imagenes/geovani.jpg" style="float:left;width:200px;height:200px;">
+            <div>
+                <img src="imagenes/geovani.jpg" style="width:50%">
+            </div>
             <h2>Geovani Alberto Tuz Poot</h2>
             <h5>Edad: 22 años</h5>
             <h5>Puesto: Desarrollador, Diseñador</h5>
@@ -63,7 +77,10 @@
         </div>
 
         <div id="menu2" class="tab-pane fade">
-            <img src="imagenes/jesus.jpg" style="float:left;width:200px;height:200px;">
+            <div>
+                <img src="imagenes/jesus.jpg" style="width:50%">
+            </div>
+
             <h2>Guadalupe De Jesús May Kauil</h2>
             <h5>Edad: 20 años</h5>
             <h5>Puesto: Desarrollador, Diseñador</h5>
